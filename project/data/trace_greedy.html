@@ -1,0 +1,19 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>
+        body { font-family: 'Segoe UI', Arial, sans-serif; margin: 20px; color: #333; }
+        h2 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 5px; }
+        table { border-collapse: collapse; width: 100%; margin-top: 15px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        th, td { padding: 12px; border: 1px solid #ddd; text-align: center; }
+        th { background-color: #34495e; color: white; }
+        tr:nth-child(even) { background-color: #f9f9f9; }
+        .code { font-family: Consolas, monospace; background-color: #e8f4f8; padding: 4px; border-radius: 4px; color: #2980b9;}
+        </style></head><body>
+<h2>SIMULATION PAS À PAS : GREEDY BEST-FIRST SEARCH</h2>
+<p><em>Note : Pour Greedy, la fonction d'évaluation f(n) = h(n). Le coût g(n) est affiché à titre informatif.</em></p>
+<table><tr><th>Étape</th><th>Nœud Extrait</th><th>g(n)</th><th>h(n)</th><th>f(n)</th><th>État de la Frontière (OPEN)</th></tr>
+<tr><td><b>0</b></td><td><b>A</b></td><td>0</td><td>6</td><td><b>6</b></td><td style='text-align:left;'><span class='code'>[A(h=6)]</span></td></tr>
+<tr><td><b>1</b></td><td><b>B</b></td><td>2</td><td>4</td><td><b>4</b></td><td style='text-align:left;'><span class='code'>[B(h=4), C(h=4)]</span></td></tr>
+<tr><td><b>2</b></td><td><b>E</b></td><td>7</td><td>1</td><td><b>1</b></td><td style='text-align:left;'><span class='code'>[E(h=1), D(h=2), C(h=4)]</span></td></tr>
+<tr><td><b>3</b></td><td><b>G</b></td><td>8</td><td>0</td><td><b>0</b></td><td style='text-align:left;'><span class='code'>[G(h=0), D(h=2), C(h=4)]</span></td></tr>
+</table>
+<h3 style='color: #27ae60;'>[SUCCÈS] Nœud BUT atteint !</h3>
+<h3>Chemin final trouvé : <span class='code'>A &rarr; B &rarr; E &rarr; G</span></h3></body></html>
