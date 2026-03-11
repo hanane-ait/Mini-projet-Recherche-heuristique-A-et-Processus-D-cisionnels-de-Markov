@@ -1,7 +1,5 @@
 # Mini-Projet ENSET : Recherche Heuristique & Processus de Markov
 
-Ce dépôt contient l'implémentation du mini-projet du module **Prise de Décision et Intelligence Artificielle** du **Master SDIA – ENSET Mohammedia**.
-
 Le projet combine deux axes principaux de l'intelligence artificielle :
 
 * **Recherche heuristique sur graphe**
